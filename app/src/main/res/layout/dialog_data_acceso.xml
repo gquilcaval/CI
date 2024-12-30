@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_data_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        >
+        <ImageView
+            android:id="@+id/imv_cerrar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_cancel_24"
+            android:background="@android:color/transparent"
+            app:tint="#743F51B5"
+            android:elevation="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Código de solicitud"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_codigo_solicitud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="134564684648"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agencia u oficina"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_agencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Oficina central"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha inicio"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_fecha_ini"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="2024-07-31"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hora inicio"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_hora_ini"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="08:00"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha final"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_fecha_fin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="2024-07-31"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hora final"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_hora_fin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="17:00"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detalle del motivo"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_detalle_motivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Reunifosdfijsdkfjoksdjfksfkdjfs fdsjfisdjfifsdfsffdsf"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zonas"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_zonas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="fsfsdfsd, fds"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Area solicitante"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_area_solicitante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Ventas"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Motivo"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_motivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="fsdfsdfsd fsdfsdf"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Empresa"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_empresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="fsdfsdf"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visitante o personal"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_visitante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="fsdfsdfsdfsdfsdfdsv"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Equipo portatil"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_equipo_portatil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="no"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Serie y Marca"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/tv_serie_marca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="fsdfsdfsdfs"
+                    />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

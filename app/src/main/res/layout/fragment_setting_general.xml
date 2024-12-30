@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/AppTheme.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_default"
+            android:text="@string/modo_trabajo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rb_batch"
+            android:layout_width="75dp"
+            android:layout_height="43dp"
+            android:text="@string/batch"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <RadioButton
+            android:id="@+id/rb_linea"
+            android:layout_width="67dp"
+            android:layout_height="@dimen/height_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:text="@string/linea"
+            app:layout_constraintStart_toEndOf="@+id/rb_batch"
+            app:layout_constraintTop_toTopOf="@+id/rb_batch" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rb_batch" />
+
+        <TextView
+            android:id="@+id/textView18"
+            style="@style/AppTheme.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_default"
+            android:text="@string/config_general"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txti_servicioweb"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:hint="@string/servicio_web"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_servicioweb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mb_descargar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_default"
+            android:paddingStart="@dimen/padding_default"
+            android:paddingEnd="@dimen/padding_default"
+            android:text="@string/btn_descarga_maestro"
+            app:layout_constraintStart_toStartOf="@+id/txti_servicioweb"
+            app:layout_constraintTop_toBottomOf="@+id/txti_servicioweb" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvi_fechaServidor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/fecha_servidor"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="@+id/txti_servicioweb"
+            app:layout_constraintStart_toStartOf="@+id/mb_descargar"
+            app:layout_constraintTop_toBottomOf="@+id/mb_descargar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_fechaServidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:enabled="false"
+                android:maxLength="20"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mb_fechahora"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_default"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/cambiar_fecha"
+            app:layout_constraintStart_toStartOf="@+id/tvi_fechaServidor"
+            app:layout_constraintTop_toBottomOf="@+id/tvi_fechaServidor" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mb_fechahora" />
+
+        <TextView
+            android:id="@+id/textView19"
+            style="@style/AppTheme.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_default"
+            android:text="@string/config_avanzado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txti_diferencia"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_default"
+            android:hint="@string/diferencia_minutos"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="@+id/tvi_fechaServidor"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_diferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="20"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txti_timeout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:hint="@string/config_timeout"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="@+id/txti_diferencia"
+            app:layout_constraintStart_toStartOf="@+id/txti_diferencia"
+            app:layout_constraintTop_toBottomOf="@+id/txti_diferencia">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="20"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txti_duracion_refrigerio"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:hint="@string/config_duracion_refrigerio"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="@+id/txti_timeout"
+            app:layout_constraintStart_toStartOf="@+id/txti_timeout"
+            app:layout_constraintTop_toBottomOf="@+id/txti_timeout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_duracion_refrigerio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="20"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:background="@color/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txti_duracion_refrigerio" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/AppTheme.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_default"
+            android:text="@string/config_otros"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <TextView
+            android:id="@+id/txt_valida_descarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:text="@string/valida_descarga"
+            app:layout_constraintStart_toStartOf="@+id/textView1"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <Switch
+            android:id="@+id/sw_valida_descarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/txt_valida_descarga"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/txt_valida_descarga" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:text="@string/sonido"
+            app:layout_constraintStart_toStartOf="@+id/txt_valida_descarga"
+            app:layout_constraintTop_toBottomOf="@+id/txt_valida_descarga" />
+
+        <Switch
+            android:id="@+id/sw_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:gravity="center"
+            android:text="@string/errores_detallados"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <Switch
+            android:id="@+id/sw_errores_detallados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/lbl_mostrar_modulo_asistencia"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:gravity="center"
+            android:text="@string/mostrar_modulo_asistencia"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Switch
+            android:id="@+id/sw_mostrar_asistencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_mostrar_modulo_asistencia"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/lbl_mostrar_modulo_asistencia" />
+
+        <TextView
+            android:id="@+id/lbl_mostrar_modulo_incidencia"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:gravity="center"
+            android:text="@string/mostrar_modulo_incidencia"
+            app:layout_constraintStart_toStartOf="@+id/lbl_mostrar_modulo_asistencia"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_mostrar_modulo_asistencia" />
+
+        <Switch
+            android:id="@+id/sw_mostrar_incidencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_mostrar_modulo_incidencia"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/lbl_mostrar_modulo_incidencia" />
+
+        <TextView
+            android:id="@+id/lbl_mostrar_modulo_acceso"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:gravity="center"
+            android:text="@string/mostrar_modulo_acceso"
+            app:layout_constraintStart_toStartOf="@+id/lbl_mostrar_modulo_incidencia"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_mostrar_modulo_incidencia" />
+
+        <Switch
+            android:id="@+id/sw_mostrar_acceso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_mostrar_modulo_acceso"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/lbl_mostrar_modulo_acceso" />
+
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_regular"
+            android:text="TareoSoft V1.0.0, sincronizado el "
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/lbl_mostrar_modulo_acceso"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_mostrar_modulo_acceso" />
+
+        <TextView
+            android:id="@+id/tv_ultima_validacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_xsmall"
+            android:layout_marginBottom="@dimen/margin_regular"
+            android:gravity="center"
+            android:text="24/11/2019 08:16:00"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_version"
+            app:layout_constraintTop_toTopOf="@+id/tv_version"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

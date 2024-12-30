@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- General Components. -->
+        <item name="spinnerStyle">@style/AppTheme.Spinner</item>
+        <item name="autoCompleteTextViewStyle">@style/AutoCompleteGeneral</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Success" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSuccess</item>
+        <item name="colorPrimaryDark">@color/colorSuccessDark</item>
+        <item name="colorAccent">@color/colorSuccessLight</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Error">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorError</item>
+        <item name="colorPrimaryDark">@color/colorErrorDark</item>
+        <item name="colorAccent">@color/colorErrorLight</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Warning">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWarning</item>
+        <item name="colorPrimaryDark">@color/colorWarningDark</item>
+        <item name="colorAccent">@color/colorWarningLight</item>
+    </style>
+
+    <style name="AppTheme.Caption">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.SubTitle" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.Spinner" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+
+    <style name="TextViewGeneral" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/text_caption</item>
+    </style>
+
+    <style name="AutoCompleteGeneral" parent="android:Widget.AutoCompleteTextView">
+        <item name="android:background">@drawable/radios_background</item>
+    </style>
+
+    <!-- SEARCH VIEW STYLE-->
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.tareo_resultado.resultadoPorEmpleado.ResultadoPorEmpleadoActivity">
+
+
+    <include
+        android:id="@+id/ly_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        style="@style/AppTheme.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Asignados: "
+        app:layout_constraintBottom_toTopOf="@+id/tv_codNuevoEmpTareo"
+        app:layout_constraintStart_toStartOf="@+id/ly_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/ly_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_totalAsignados"
+        android:layout_width="@dimen/width_default"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="0002"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView29"
+        style="@style/AppTheme.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="Pendientes: "
+        app:layout_constraintStart_toEndOf="@+id/tv_totalAsignados"
+        app:layout_constraintTop_toTopOf="@+id/tv_totalAsignados" />
+
+    <TextView
+        android:id="@+id/tv_totalPendientes"
+        android:layout_width="@dimen/width_default"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginStart="18dp"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_codNuevoEmpTareo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Codigo de empleado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ly_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_codNuevoEmpTareo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_empleadosTareo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_codNuevoEmpTareo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codNuevoEmpTareo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

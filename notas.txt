@@ -1,0 +1,7 @@
+Jueves
+- 1.Enviar al servidor solo los tareos cerrados o liquidados (8h) (31-)
+- Control de las fechas fuera y en linea(si se actualiza la fecha y no hay servicio para corroborar se asumen el cambio veridico, escucha de las modificaciones), al sincronizar validad fecha tambien 
+- Arreglar conteo de finalizar grupal 
+- 6.Cuando es destajo es obligatorio resultados y seleccionar unidad (4h)
+- 2.Admin solo tiene accesso al panel de configuracion (el codigo estará predefinido en el codigo) (3h)
+- 3.Bloquear fecha de inicio del tareo cuando se añade una persona (2h)ca

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_trabajadores">
+        <item quantity="zero">"Cero trabajadores"</item>
+        <item quantity="one">"1 trabajador"</item>
+        <item quantity="many">"%d trabajadores"</item>
+        <item quantity="other">"%d trabajadores"</item>
+    </plurals>
+    <plurals name="cant_empleados">
+        <item quantity="zero">"Cero empleados"</item>
+        <item quantity="one">"1 empleado"</item>
+        <item quantity="many">"%d empleados"</item>
+        <item quantity="other">"%d empleados"</item>
+    </plurals>
+    <plurals name="cant_tareos">
+        <item quantity="zero">"Cero tareos"</item>
+        <item quantity="one">"1 tareo"</item>
+        <item quantity="many">"%d tareos"</item>
+        <item quantity="other">"%d tareos"</item>
+    </plurals>
+</resources>

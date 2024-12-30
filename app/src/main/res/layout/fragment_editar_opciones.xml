@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_fechaIniTareo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/fecha_inicio"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_fechaIniTareo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:gravity="top|left"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_horaIniTareo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/hora_inicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/tv_fechaIniTareo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_horaIniTareo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:editable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_default"
+        style="@style/AppTheme.SubTitle"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:text="@string/lista_turno"
+        app:layout_constraintStart_toStartOf="@+id/tv_fechaIniTareo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fechaIniTareo" />
+
+    <TextView
+        android:id="@+id/tv_turno_tareo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:gravity="center"
+        android:text="@string/cargando"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_default"
+        style="@style/AppTheme.SubTitle"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:text="@string/tipo_tareo"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/tv_tipo_tareo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_default"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:text="@string/cargando"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/tv_lblunidad_tareo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_default"
+        style="@style/AppTheme.SubTitle"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="@string/lista_unidad_medida"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/tv_unidad_tareo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginStart="13dp"
+        android:text="@string/lista_unidad_medida"
+        android:visibility="invisible"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/tv_lblunidad_tareo"
+        app:layout_constraintTop_toTopOf="@+id/tv_lblunidad_tareo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="206dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

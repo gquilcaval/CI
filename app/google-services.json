@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "5735427971",
+    "project_id": "tareo-7c7e1",
+    "storage_bucket": "tareo-7c7e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5735427971:android:2ccfc89ad6f2a242e150b6",
+        "android_client_info": {
+          "package_name": "com.dms.tareosoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5735427971-datu9unv03f8r3bi6u7dauq3sopbk26a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dms.tareosoft",
+            "certificate_hash": "bcb8df98f6541f2844957fa7deeba642725f9d72"
+          }
+        },
+        {
+          "client_id": "5735427971-tvoflm5hc9l60j6it0sfunipfoav7qlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWWL24ajdRE_vSyXIg8c4IEJ8mV0kIRqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5735427971-tvoflm5hc9l60j6it0sfunipfoav7qlo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

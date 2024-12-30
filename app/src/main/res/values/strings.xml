@@ -1,0 +1,208 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">TareoSoft</string>
+    <string name="cargando">Cargando...</string>
+    <string name="carga">Cargando</string>
+    <string name="maestros">Tablas maestras...</string>
+    <string name="validando">Validando</string>
+    <string name="conectando">Estableciendo conexion con el servicio web...</string>
+    <string name="seleccione">Seleccione</string>
+    <string name="sin_datos">Sin datos</string>
+    <string name="descarga_exitosa">Descarga exitosa</string>
+    <string name="servicio_correcto">Conexión exitosa</string>
+    <string name="progressbar_text">Obteniendo base de datos...</string>
+
+    <!-- Setting General-->
+    <string name="config_general">Ajustes Generales</string>
+    <string name="config_avanzado">Ajustes Avanzados</string>
+    <string name="config_otros">Otros Ajustes</string>
+
+    <string name="servicio_web">Servicio Web</string>
+    <string name="btn_descarga_maestro">cargar maestros</string>
+    <string name="btn_validar_conexion">validar conexion</string>
+    <string name="fecha_servidor">Fecha y Hora Aplicación</string>
+    <string name="cambiar_fecha">Cambiar fecha</string>
+    <string name="diferencia_minutos">Maxima Diferencia(min)</string>
+    <string name="errores_detallados">Mostrar errores detallados</string>
+    <string name="mostrar_modulo_asistencia">Mostrar módulo asistencia</string>
+    <string name="mostrar_modulo_incidencia">Mostrar módulo incidencia</string>
+    <string name="mostrar_modulo_acceso">Mostrar módulo acceso</string>
+    <string name="sonido">Sonido de lectura</string>
+    <string name="valida_descarga">Valida descarga</string>
+
+    <!-- Setting Ajustes -->
+    <string name="modo_trabajo">Modo de Trabajo</string>
+    <string name="batch">Batch</string>
+    <string name="linea">Linea</string>
+    <string name="general_restricciones">Condiciones</string>
+    <string name="ajustes_validaciones">Extras</string>
+    <string name="condicion_unidad">Solicitar unidad de medida</string>
+    <string name="fecha_hora_ini_manual">Fecha y hora inicio manual</string>
+    <string name="fecha_hora_fin_manual">Fecha y hora fin manual</string>
+    <string name="vigencia_tareo">Vigencia de descarga</string>
+    <string name="registrar_empleado">Registrar empleado</string>
+    <string name="registrar_tareo_not_empleado">Validar tareo con empleados</string>
+
+    <!-- Setting Tareo -->
+    <string name="config_unidad_medida">Unidad Medida</string>
+    <string name="config_turno">Turno</string>
+    <string name="config_clase">Clase</string>
+    <string name="config_timeout">Timeout(seg)</string>
+    <string name="config_duracion_refrigerio">Duracion de refrigerio (min)</string>
+    <string name="pre_seleccion">Preseleccion Tareo</string>
+
+    <string name="web_service_incorrecto">Formato incorrecto para el servicio web</string>
+
+
+    <string name="total_ini_x">Total de tareos iniciados : %1$d</string>
+    <string name="total_fin_x">Total de tareos finalizados : %1$d</string>
+    <string name="total_tareo_x">Total de tareos: %1$s</string>
+    <string name="total_all_empleados_x">Total de empleados con tareos : %1$d</string>
+    <string name="finalizar_empleados_x">Fin empleados : (%1$d)</string>
+    <string name="total_por_fin">Tareos por finalizar :</string>
+
+    <string name="status_tareo_x">Tareo: %1$s</string>
+    <string name="status_servidor_x">Descarga: %1$s</string>
+
+    <string name="empleados_asignados_x">Asignados: %1$d</string>
+    <string name="empleados_pendientes_x">Pendientes: %1$d</string>
+    <string name="cantidad_producida_x">Cantidad producida: %1$s</string>
+
+    <string name="fecha_hora_fin_empleado">Fecha y hora fin de tareo por trabajador</string>
+
+
+    <!-- Login Activity-->
+    <string name="user_hint">Ingresar Usuario</string>
+
+    <string name="pass_hint">Ingresar Contraseña</string>
+    <string name="button_login">Ingresar</string>
+    <string name="pass_error">Contraseña Incorrecta</string>
+
+    <!-- Nuevo Tareo -->
+    <!-- Nuevo Tareo:Definicion -->
+    <string name="lista_clase">Clase</string>
+
+    <!-- Nuevo Tareo:Opciones -->
+    <string name="lista_turno">Turno:</string>
+    <string name="lista_unidad_medida">Unidad de Medida:</string>
+    <string name="resultado">Resultados:</string>
+    <string name="tipo_tareo">Tipo de Tareo:</string>
+    <string name="tipo_tareo_1">Jornal</string>
+    <string name="tipo_tareo_2">Destajo</string>
+
+    <!-- Nuevo Tareo:Empleados -->
+    <string name="fecha_hora_inicio_empleado">Inicio del Empleado</string>
+    <string name="fecha_inicio">Fecha inicio:</string>
+    <string name="hora_inicio">Hora inicio:</string>
+    <string name="fecha_fin">Fecha fin:</string>
+    <string name="hora_fin">Hora fin:</string>
+    <string name="lista_empleados">Asignación de Empleado :</string>
+    <string name="prefijado">(prefijado)</string>
+    <string name="automatico">(automático)</string>
+
+    <!-- Editar Tareo -->
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Menu Open</string>
+    <string name="navigation_drawer_close">Menu Close</string>
+
+
+    <!-- CustomDialog -->
+    <string name="title_validation">Valores Incorrectos</string>
+    <string name="title_success">Correcto</string>
+    <string name="title_error">Error</string>
+    <string name="title_confirmar">Confirmar</string>
+    <string name="title_atention">Atención</string>
+
+    <string name="message_validation">Valores erróneos para los siguientes campos:</string>
+
+    <string name="label_ok">Aceptar</string>
+    <string name="label_close">Cancelar</string>
+
+    <string name="label_yes">Si</string>
+    <string name="label_no">No</string>
+
+    <string name="dialog_logout_title">Cerrar Sesión</string>
+    <string name="dialog_logout_message">¿Está seguro que desea cerrar sesión?</string>
+
+    <!-- Nav Header -->
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- Tabs -->
+    <string name="tab_title_main_1">Definición</string>
+    <string name="tab_title_main_2">Opciones</string>
+    <string name="tab_title_main_3">Empleado</string>
+
+    <string name="tab_tareo_ini">Iniciados</string>
+    <string name="tab_tareo_fin">Finalizados</string>
+
+    <string name="tab_reubicar_x_empleado">Por Empleado</string>
+    <string name="tab_reubicar_x_tareo">Por Tareo</string>
+
+    <string name="tab_tareo_reubicar_cantidad">Cantidades</string>
+    <string name="tab_tareo_reubicar_finalizar">Finalizar</string>
+
+    <!-- MENSAJERIA-->
+
+    <!-- Nuevo Tareo -->
+    <string name="sin_clase_tareo">Clase de tareo</string>
+    <string name="sin_nivel">Nivel</string>
+    <string name="sin_feha_inicio_tareo">Fecha Inicio de Tareo</string>
+    <string name="fecha_menor">La fecha de inicio no puede ser menor en x día(s) a la fecha actual</string>
+    <string name="clase_erronea"> Clase de tareo errónea</string>
+    <string name="confirmar_quitar_empleado">Empleado ya se encuentra en este tareo, ¿Desea quitarlo?</string>
+    <string name="empleado_retirado">Se retiro al empleado del tareo</string>
+    <string name="empleado_no_encontrado_nomina">Empleado no se encuentra en el área de nomina</string>
+    <string name="empleado_ocupado">Empleado ya se encuentra registrado en otro Tareo</string>
+    <string name="empleado_registrado">Empleado añadido</string>
+    <string name="error_empleado_nomina">No se pudo validar el empleado en nomina</string>
+    <string name="error_cargar_detalle_tareo">No se pudo verificar los detalles del tareo</string>
+    <string name="error_empleado_bd">No se pudo validar la existencia del empleado </string>
+    <string name="error_registrar">Error al registrar</string>
+    <string name="fecha_empleado_menor_fecha_tareo">La fecha de inicio manual no puede ser menor a la fecha inicio de tareo</string>
+    <string name="datos_vacios">Datos incompletos</string>
+    <string name="cantidad_vacia">Colocar cantidad producida</string>
+    <string name="message_out_hour">El tiempo limite de retiro fue superado, ya no puedes retirar al empleado</string>
+
+    <!-- Settings  -->
+    <string name="sin_data_nuevo_servicio">Sincronice los maestros para el nuevo servicio</string>
+    <string name="error_WS">Error de conexión de WS</string>
+    <string name="movil_sin_conexion">Error de conexión. Verifique que la conexión por Wi-fi esté activada</string>
+    <string name="reintentar">REINTENTAR</string>
+
+    <!-- Login -->
+    <string name="sin_data">No se ha realizado la descarga de maestros</string>
+    <string name="sin_validar_conexion">No se ha validado el servicio web</string>
+    <string name="sin_trabajadores">Un tareo debe tener almenos un trabajador</string>
+    <string name="sin_unidad_medida">Sin unidad de media</string>
+    <string name="total_emp">Total Empleados</string>
+    <string name="total_asistencias">Total Asistencias</string>
+    <string name="guardando">Guardando</string>
+    <string name="actualizar_tareo">Modificando tareo ...</string>
+    <string name="empleado_noencontrado_tareo">Empleado no se encuentra en el Tareo</string>
+    <string name="error_empleado_tareo">No se pudo validar el empleado en el Tareo</string>
+    <string name="minimo_seleccion">Debe seleccionar minimo un tareo</string>
+    <string name="fin_menor_inicio">La fecha final no puede ser menor  la fecha inicio del tareo</string>
+    <string name="ini_refrig_menor_ini_tareo">La Fecha de Inicio de refrigerio no debe ser menor a la fecha inicio del tareo</string>
+    <string name="fin_refrig_menor_ini_tareo">La fecha fin de refrigerio no puede ser menor a la fecha inicio del tareo</string>
+    <string name="fin_refrig_menor_ini_refrig">La fecha fin de regrigerio no debe ser menor a la de inicio de refrigerio</string>
+    <string name="fin_tareo_menor_fin_refrig">La fecha fin del tareo no puede ser menor a la fecha fin del refrigerio</string>
+    <string name="error_inesperado">Ocurrio un error inesperado</string>
+    <string name="empleado_finalizado">El empleado ya se encuentra finalizado</string>
+    <string name="empleado_not_found">El empleado no se encuentra registrado en el tareo</string>
+    <string name="empleado_con_resultados">El empleado ya cuenta con resultados ingresados</string>
+
+
+    <string name="registro_exitoso">Registro exitoso</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ACTION_DATAWEDGE">com.symbol.datawedge.api.ACTION</string>
+
+    <string name="activity_intent_filter_action">com.dms.tareosoft.SCAN</string>
+    <string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>
+    <string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>
+    <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
+</resources>

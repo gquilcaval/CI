@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.tareo_resultado.resultadoPorTareo.ResultadoPorTareoActivity">
+
+    <include
+        android:id="@+id/ly_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_name_tareo"
+        style="@style/AppTheme.SubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/txt_cant_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ly_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/ly_toolbar"
+        tools:text="Asignados: " />
+
+    <TextView
+        android:id="@+id/txt_cant_total"
+        style="@style/AppTheme.SubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tv_codNuevoEmpTareo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ly_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_tareo"
+        tools:text="Cantidad: " />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_codNuevoEmpTareo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Cantidad producida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ly_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cant_total">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_cant_prod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="0123456789-"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".7" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="Fecha"
+        android:textSize="@dimen/text_subheading"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/line1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codNuevoEmpTareo" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="Hora"
+        android:textSize="@dimen/text_subheading"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/line2"
+        app:layout_constraintStart_toEndOf="@+id/line1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codNuevoEmpTareo" />
+
+    <TextView
+        android:id="@+id/txt_cantidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="Cantidad"
+        android:textSize="@dimen/text_subheading"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codNuevoEmpTareo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_res_por_tareo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_date"
+        tools:itemCount="5"
+        tools:listitem="@layout/row_reubicar_tipo_tareo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

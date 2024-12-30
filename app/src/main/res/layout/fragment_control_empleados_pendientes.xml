@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lbl_concepto1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_xsmall"
+        style="@style/AppTheme.SubTitle"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:gravity="center"
+        android:text="Concepto 1 "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="206dp" />
+
+    <TextView
+        android:id="@+id/lbl_concepto2"
+        style="@style/AppTheme.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_xsmall"
+        android:gravity="center"
+        android:text="Concepto 2 "
+        app:layout_constraintStart_toStartOf="@+id/lbl_concepto1"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_concepto1" />
+
+    <TextView
+        android:id="@+id/textView30"
+        style="@style/AppTheme.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_xsmall"
+        android:gravity="center"
+        android:text="Fecha Inicio "
+        app:layout_constraintStart_toStartOf="@+id/lbl_concepto2"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_concepto2" />
+
+    <TextView
+        android:id="@+id/tv_fechaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_xsmall"
+        android:gravity="center|left"
+        android:text="19/11/2019 02:48:00"
+        app:layout_constraintStart_toStartOf="@+id/tv_concepto2"
+        app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_empleadosTareo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_totalEmpTareo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/tv_totalEmpTareo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Finalizados : 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_concepto1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_xsmall"
+        android:layout_marginStart="14dp"
+        android:gravity="center|left"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_concepto1"
+        app:layout_constraintTop_toTopOf="@+id/lbl_concepto1" />
+
+    <TextView
+        android:id="@+id/tv_concepto2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_xsmall"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|left"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_concepto1"
+        app:layout_constraintTop_toTopOf="@+id/lbl_concepto2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_tareo"
+            android:title="Tareos" />
+        <item
+            android:id="@+id/menu_verificacion"
+            android:title="Control" />
+        <item
+            android:id="@+id/menu_fin_tareo"
+            android:title="Finalizar" />
+        <item
+            android:id="@+id/menu_resultado"
+            android:title="Resultado" />
+        <item
+            android:id="@+id/menu_sync"
+            android:title="Sincronizacion" />
+        <item
+            android:id="@+id/menu_reubicar"
+            android:title="Reubicar" />
+        <item
+            android:id="@+id/menu_consulta"
+            android:title="Consultas" />
+
+        <group
+            android:id="@+id/menu_asistencia"
+            android:checkableBehavior="none"
+            >
+            <item
+                android:id="@+id/menu_registro_asistencia"
+                android:title="Registro Asistencia" />
+            <item
+                android:id="@+id/menu_consulta_asistencia"
+                android:title="Consulta Asistencia" />
+        </group>
+
+        <group
+            android:id="@+id/menu_incidencia"
+            android:checkableBehavior="none">
+            <item
+                android:id="@+id/menu_registro_incidencia"
+                android:title="Registro Incidencia" />
+            <item
+                android:id="@+id/menu_consulta_incidencia"
+                android:title="Consulta Incidencia" />
+        </group>
+
+        <group
+            android:id="@+id/menu_acceso"
+            android:checkableBehavior="none">
+            <item
+                android:id="@+id/menu_registro_acceso"
+                android:title="Registro Acceso" />
+            <item
+                android:id="@+id/menu_consulta_acceso"
+                android:title="Consulta Acceso" />
+
+        </group>
+
+        <group
+            android:id="@+id/menu_bottom"
+            android:checkableBehavior="none">
+            <item
+                android:id="@+id/menu_config"
+                android:title="Configuración" />
+            <item
+                android:id="@+id/menu_close"
+                android:title="Salir" />
+        </group>
+
+    </group>
+
+</menu>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_fechaIniTareo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/fecha_inicio"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_fechaIniTareo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:gravity="top|left"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_horaIniTareo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/hora_inicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/tv_fechaIniTareo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_horaIniTareo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:gravity="top|left"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_turno_tareo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:text="@string/lista_turno"
+        app:layout_constraintBottom_toTopOf="@+id/sp_turnoTareo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_fechaIniTareo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fechaIniTareo" />
+
+    <Spinner
+        android:id="@+id/sp_turnoTareo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tipo_tareo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_turno_tareo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_turno_tareo" />
+
+    <TextView
+        android:id="@+id/tv_tipo_tareo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="start"
+        android:text="@string/tipo_tareo"
+        app:layout_constraintBottom_toTopOf="@+id/container_tipo_tareo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sp_turnoTareo"
+        app:layout_constraintTop_toBottomOf="@+id/sp_turnoTareo" />
+
+    <RadioGroup
+        android:id="@+id/container_tipo_tareo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tipo_reultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_tipo_tareo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tipo_tareo">
+
+        <RadioButton
+            android:id="@+id/rb_jornal"
+            android:layout_width="77dp"
+            android:layout_height="@dimen/height_default"
+            android:button="@drawable/ic_action_checked"
+            android:checked="true"
+            android:text="@string/tipo_tareo_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rb_destajo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_default"
+            android:layout_marginStart="24dp"
+            android:button="@drawable/ic_action_unchecked"
+            android:checked="false"
+            android:text="@string/tipo_tareo_2"
+            app:layout_constraintBottom_toBottomOf="@+id/rb_jornal"
+            app:layout_constraintStart_toEndOf="@+id/rb_jornal"
+            app:layout_constraintTop_toTopOf="@+id/rb_jornal" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_tipo_reultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Resultados"
+        app:layout_constraintBottom_toTopOf="@+id/container_tipo_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/container_tipo_tareo"
+        app:layout_constraintTop_toBottomOf="@+id/container_tipo_tareo" />
+
+    <RadioGroup
+        android:id="@+id/container_tipo_resultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_unidad_tareo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_tipo_reultado"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tipo_reultado">
+
+        <RadioButton
+            android:id="@+id/rb_porEmpleado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/ic_action_checked"
+            android:checked="true"
+            android:text="Por empleado"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rb_porTareo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rb_porTareo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:button="@drawable/ic_action_unchecked"
+            android:checked="false"
+            android:text="Por tareo"
+            app:layout_constraintBottom_toBottomOf="@+id/rb_porEmpleado"
+            app:layout_constraintStart_toEndOf="@+id/rb_porEmpleado"
+            app:layout_constraintTop_toTopOf="@+id/rb_porEmpleado" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_unidad_tareo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/lista_unidad_medida"
+        app:layout_constraintBottom_toTopOf="@+id/sp_unidMedidaTareo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/container_tipo_resultado"
+        app:layout_constraintTop_toBottomOf="@+id/container_tipo_resultado" />
+
+    <Spinner
+        android:id="@+id/sp_unidMedidaTareo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_default"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_unidad_tareo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_unidad_tareo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

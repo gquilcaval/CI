@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/general"
+        android:icon="@drawable/ic_business"
+        android:title="General" />
+
+    <item
+        android:id="@+id/tareo"
+        android:icon="@drawable/ic_group"
+        android:title="Tareo" />
+
+    <item
+        android:id="@+id/ajustes"
+        android:icon="@drawable/ic_ajustes"
+        android:title="Ajustes" />
+
+</menu>
